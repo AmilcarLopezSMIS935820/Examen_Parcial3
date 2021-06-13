@@ -3,6 +3,7 @@ package com.smis935820.examen_parcial3
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import com.smis935820.examen_parcial3.FirebaseUtils.firebaseAuth
@@ -46,5 +47,14 @@ class loginActivity : AppCompatActivity() {
                     }
                 }
             }
+    }
+
+     fun create(view: View){
+        startActivity(Intent(this, createAccountActivity::class.java))
+        finish()
+    }
+
+    fun createAccount(view: View){
+        startActivity(Intent(this, createAccountActivity::class.java))
     }
 }

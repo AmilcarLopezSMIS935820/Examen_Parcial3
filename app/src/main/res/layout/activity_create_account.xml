@@ -6,4 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".createAccountActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="¡Crea tu cuenta Woof!"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#074D85"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/perro"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su correo"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:background="@drawable/contenedor"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese una contraseña"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:background="@drawable/contenedor"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar contraseña"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:background="@drawable/contenedor"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:layout_marginBottom="45dp"/>
+
+        <Button
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/ovalo"
+            android:text="Crear Cuenta"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#CD2A1E" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
