@@ -19,6 +19,8 @@ import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import kotlinx.android.synthetic.main.activity_inicio.*
+
+
 class inicio : AppCompatActivity(), SearchView.OnQueryTextListener, androidx.appcompat.widget.SearchView.OnQueryTextListener {
 
     private lateinit var binding:ActivityInicioBinding

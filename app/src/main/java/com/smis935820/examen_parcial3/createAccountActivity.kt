@@ -1,5 +1,6 @@
 package com.smis935820.examen_parcial3
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,6 +17,7 @@ class createAccountActivity : AppCompatActivity() {
     lateinit var userPassword: String
     lateinit var createAccountInputsArray: Array<EditText>
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_account)
@@ -23,6 +25,11 @@ class createAccountActivity : AppCompatActivity() {
         createAccountInputsArray = arrayOf(etEmail, etPassword, etConfirmPassword)
         btnCreateAccount.setOnClickListener {
             createAccount()
+        }
+
+        btnregresar.setOnClickListener {
+            startActivity(Intent(this, loginActivity::class.java))
+            finish()
         }
     }
 

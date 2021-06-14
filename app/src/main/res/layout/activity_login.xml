@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FFFFFF"
     android:layout_height="match_parent"
     tools:context=".loginActivity">
 
@@ -23,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
-            android:text="¡Woof woof!"
+            android:text="¡Bienvenido Woof!"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="#074D85"
@@ -60,19 +61,19 @@
             android:background="@drawable/contenedor"
             android:textColor="@color/black"
             android:inputType="textPassword"
-            android:layout_marginBottom="45dp"/>
+            android:layout_marginBottom="35dp"/>
 
         <Button
             android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="42dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/ovalo"
             android:text="Iniciar sesión"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:backgroundTint="#2196F3" />
+            app:backgroundTint="#1281DA" />
 
         <TextView
             android:layout_width="match_parent"
@@ -88,8 +89,8 @@
         <Button
             android:id="@+id/btnCreateAccount"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginBottom="45dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/ovalo"
             android:text="Crear Cuenta"
             android:textColor="@color/white"
@@ -98,13 +99,17 @@
             android:textStyle="bold"
             app:backgroundTint="#45A9F8" />
 
-        <TextView
-            android:id="@+id/msjfinal"
+        <Button
+            android:id="@+id/googleButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ayudanos a cambiar su mundo :)"
-            android:textAlignment="center"
-            android:textColor="#A3B3B3" />
+            android:layout_height="42dp"
+            android:background="@drawable/log"
+            android:text="Iniciar con Google"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingLeft="19dp"
+            app:backgroundTint="#B9BFC2" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
